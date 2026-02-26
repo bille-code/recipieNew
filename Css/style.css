@@ -83,7 +83,8 @@
 .recipie-list__instruc li::marker{
 
   color: var(--Rose_800);
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit";
+
 
 }
 
