@@ -1,44 +1,42 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
+  --White: hsl(0, 0%, 100%);
 
---White: hsl(0, 0%, 100%);
-
---Stone_100: hsl(30, 54%, 90%);
---Stone_150: hsl(30, 18%, 87%);
---Stone_600: hsl(30, 10%, 34%);
---Stone_900: hsl(24, 5%, 18%);
---Brown_800: hsl(14, 45%, 36%);
---Rose_800: hsl(332, 51%, 32%);
---Rose_50: hsl(330, 100%, 98%);
---regular: 400;
+  --Stone_100: hsl(30, 54%, 90%);
+  --Stone_150: hsl(30, 18%, 87%);
+  --Stone_600: hsl(30, 10%, 34%);
+  --Stone_900: hsl(24, 5%, 18%);
+  --Brown_800: hsl(14, 45%, 36%);
+  --Rose_800: hsl(332, 51%, 32%);
+  --Rose_50: hsl(330, 100%, 98%);
+  --regular: 400;
 }
-.recipie-card__img{
+
+.recipie-card__img {
   width: 100%;
-
 }
-.recipie-card__tittle{
 
+.recipie-card__tittle {
   padding: 30px;
   margin-top: -18px;
 }
-.recipie-card__content{
 
+.recipie-card__content {
   padding: 30px;
   margin-top: -45px;
-  
 }
-.text-card{
+
+.text-card {
   font-family: "Outfit";
   color: var(--Stone_600);
-
 }
-.recipie-prepara{
 
+.recipie-prepara {
   background: var(--Rose_50);
   padding: 15px 94px 18px 40px;
   margin: 0 21px 20px 21px;
@@ -46,45 +44,103 @@
   border-radius: 18px;
 }
 
-.time{
+.recipie-prepara li:nth-last-child(n) {
+  font-family: "Outfit";
+}
+
+.time {
   color: var(--Rose_800);
+  font-family: "Outfit", sans-serif;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-.recipie-list{
+.recipie-list {
   padding: 15px 10px 18px 40px;
   margin: 0 21px 20px 21px;
-  line-height: 30px ;
+  line-height: 30px;
   border-bottom: 1px solid var(--Stone_150);
 }
 
-.ingredient{
-
+.ingredient {
   font-family: "Young serif", sans-serif;
   color: var(--Rose_800);
   font-size: 2em;
   padding: 0 0 0 17px;
 }
-.recipie-list__instruc{
 
-  padding: 15px 10px 18px 40px;
+.recipie-list__instruc {
+  padding: 15px 1px 18px 40px;
   margin: 0 21px 20px 21px;
-  line-height: 20px ;
+  line-height: 20px;
   border-bottom: 1px solid var(--Stone_150);
 }
-  
-.recipie-list__instruc li:nth-child(n){
 
+.recipie-list__instruc li:nth-child(n) {
   margin: 0 0 30px 0;
   padding-left: 10px;
-  line-height: 20px!important;
+  line-height: 20px !important;
 }
-.recipie-list__instruc li::marker{
 
+.recipie-list__instruc li::marker {
   color: var(--Rose_800);
   font-family: "Outfit";
-
-
 }
 
+.recipie-nutricition__content {
+  padding: 15px 1px 18px 40px;
+  margin: 0 21px 20px 21px;
+  line-height: 20px;
+}
+
+.calories {
+  padding: 0 45px 20px 45px;
+}
+
+.calorie {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--Stone_150);
+  margin: 0 16px 16px 0;
+  padding: 0 0 6px 0;
+}
+
+.calorie span {
+  color: var(--Rose_800);
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+  body{
+    background: var(--Rose_50);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 0 400px;
+
+  }
+
+.recipie-card__container{
+
+  background: var(--White);
+  max-width: 745px;
+    padding: 40px;
+    border-radius: 24px;
+
+  
+  }
+
+  .recipie-card__img{
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .recipie-card__tittle{
+    font-family: "Young serif";
+  }
+
+  .time{
+    font-family: "Outfit";
+  }
+}
