@@ -17,16 +17,16 @@
   --regular: 400;
 }
 
-.recipie-card__img {
+.recipe-card__img {
   width: 100%;
 }
 
-.recipie-card__tittle {
+.recipe-card__tittle {
   padding: 30px;
   margin-top: -18px;
 }
 
-.recipie-card__content {
+.recipe-card__content {
   padding: 30px;
   margin-top: -45px;
 }
@@ -36,7 +36,7 @@
   color: var(--Stone_600);
 }
 
-.recipie-prepara {
+.recipe-prepara {
   background: var(--Rose_50);
   padding: 15px 94px 18px 40px;
   margin: 0 21px 20px 21px;
@@ -44,7 +44,7 @@
   border-radius: 18px;
 }
 
-.recipie-prepara li:nth-last-child(n) {
+.recipe-prepara li:nth-last-child(n) {
   font-family: "Outfit";
 }
 
@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 
-.recipie-list {
+.recipe-list {
   padding: 15px 10px 18px 40px;
   margin: 0 21px 20px 21px;
   line-height: 30px;
@@ -69,25 +69,25 @@
   padding: 0 0 0 17px;
 }
 
-.recipie-list__instruc {
+.recipe-list__instruc {
   padding: 15px 1px 18px 40px;
   margin: 0 21px 20px 21px;
   line-height: 20px;
   border-bottom: 1px solid var(--Stone_150);
 }
 
-.recipie-list__instruc li:nth-child(n) {
+.recipe-list__instruc li:nth-child(n) {
   margin: 0 0 30px 0;
   padding-left: 10px;
   line-height: 20px !important;
 }
 
-.recipie-list__instruc li::marker {
+.recipe-list__instruc li::marker {
   color: var(--Rose_800);
   font-family: "Outfit";
 }
 
-.recipie-nutricition__content {
+.recipe-nutricition__content {
   padding: 15px 1px 18px 40px;
   margin: 0 21px 20px 21px;
   line-height: 20px;
@@ -111,6 +111,35 @@
 }
 
 
+@media screen and (min-width: 1024px){
+
+
+  body{
+    background: var(--Rose_50);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 153px 0 215px;
+
+  }
+
+.recipe-card__container{
+
+  background: var(--White);
+  max-width: 600px;
+    padding: 40px;
+    border-radius: 24px;
+
+  
+  }
+
+  
+  .recipe-card__img{
+    border-radius: 16px;
+    width: 100%;
+  }
+
+}
+
 @media screen and (min-width: 1440px) {
 
   body{
@@ -121,7 +150,7 @@
 
   }
 
-.recipie-card__container{
+.recipe-card__container{
 
   background: var(--White);
   max-width: 745px;
@@ -131,12 +160,12 @@
   
   }
 
-  .recipie-card__img{
+  .recipe-card__img{
     border-radius: 16px;
     width: 100%;
   }
 
-  .recipie-card__tittle{
+  .recipe-card__tittle{
     font-family: "Young serif";
   }
 
@@ -144,3 +173,5 @@
     font-family: "Outfit";
   }
 }
+
+
